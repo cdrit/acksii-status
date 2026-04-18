@@ -2,7 +2,7 @@
   "id": "acksii-status",
   "title": "ACKSII Status Effects",
   "description": "Replaces status effects with ACKS II conditions. Made using Grok.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
