@@ -1,9 +1,9 @@
 // scripts/main.js
 Hooks.on("init", async () => {
-  console.log("🔄 Acksii Status Effects | Loading custom effects...");
+  console.log("🔄 ACKS II Status Effects | Loading custom effects...");
 
   try {
-    const jsonPath = "modules/acksii-status/effects/my-effects.json";
+    const jsonPath = "modules/acksii-status/effects/acksii-effects.json";
 
     const response = await fetch(jsonPath);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -60,6 +60,6 @@ Hooks.on("init", async () => {
 
   } catch (error) {
     console.error("❌ Failed to load effects JSON:", error);
-    ui.notifications.error("Acksii Status Effects failed to load the JSON file. Check console (F12).");
+    ui.notifications.error("ACKS II Status Effects failed to load the JSON file. Check console (F12).");
   }
 });
