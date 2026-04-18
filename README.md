@@ -1,1 +1,1 @@
-This is a very rudimentary module I made using Grok to just replace the default status effects to the ones in the ACKS II system. It's very self-explanatory. Dependency is for the icons.
+This is a very rudimentary module I made using Grok to just replace the default status effects to the ones in the ACKS II system. It's very self-explanatory. Dependency is for the icons. It's probably best to just download the main branch instead of going through releases because I don't know how github works.
