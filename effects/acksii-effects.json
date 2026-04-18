@@ -318,18 +318,19 @@
           "value": "-4",
           "priority": null
         },
-         {
-          "key": "ATL.sight.enabled",
-          "mode": 5,
-          "value": "false",
-          "priority": null
-        },
         {
           "key": "system.surprise.avoidsurprise",
           "mode": 2,
           "value": "-2",
           "priority": null
+        },
+ 	{
+          "key": "ATL.sight.enabled",
+          "mode": 5,
+          "value": "false",
+          "priority": null
         }
+
       ],
       "disabled": false,
       "duration": {
@@ -615,7 +616,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#2bfbf7",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -659,7 +660,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#2bfbf7",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -703,7 +704,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#b52bfb",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -895,7 +896,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#005bff",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -939,7 +940,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#00ff0f",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -1135,7 +1136,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#ff00ff",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -1525,7 +1526,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#ff9600",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -1613,7 +1614,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#baffb7",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -1676,7 +1677,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#92ae58",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -1771,7 +1772,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#1dff00",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -1815,7 +1816,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#fff800",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -2004,7 +2005,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#9300ff",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -2092,7 +2093,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#9f9f9f",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -2220,7 +2221,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#00a359",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -2264,7 +2265,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#00a305",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -2883,7 +2884,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#a30000",
       "transfer": true,
       "statuses": [],
       "sort": 0,
@@ -2971,7 +2972,7 @@
         "startTurn": null
       },
       "origin": null,
-      "tint": "#ffffff",
+      "tint": "#aa6d6d",
       "transfer": true,
       "statuses": [],
       "sort": 0,
