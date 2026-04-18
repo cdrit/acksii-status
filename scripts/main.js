@@ -1,18 +1,18 @@
 // scripts/main.js
 Hooks.on("init", async () => {
-  console.log("🔄 Your Custom Status Effects | Loading DCE JSON...");
+  console.log("🔄 Acksii Status Effects | Loading custom effects...");
 
   try {
-    const jsonPath = "modules/your-custom-statuses/effects/my-dce-effects.json";
+    const jsonPath = "modules/acksii-status/effects/my-effects.json";
 
     const response = await fetch(jsonPath);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-    const dceData = await response.json();
+    const data = await response.json();
 
     const statusArray = [];
 
-    const folders = Array.isArray(dceData) ? dceData : [dceData];
+    const folders = Array.isArray(data) ? data : [data];
 
     let order = 1;
 
@@ -30,13 +30,7 @@ Hooks.on("init", async () => {
 
         const name = effectEntry.name;
         const img = effectEntry.img || "icons/svg/aura.svg";
-
-        let tint = effectEntry.tint 
-                || effectEntry.effect?.tint 
-                || effectEntry.color 
-                || "#ffffff";
-        if (!tint.startsWith("#")) tint = "#" + tint.replace("#", "");
-
+        const tint = effectEntry.tint || effectEntry.effect?.tint || "#ffffff";
         const description = effectEntry.description 
                          || effectEntry.effect?.description 
                          || effectEntry.notes 
@@ -50,26 +44,22 @@ Hooks.on("init", async () => {
           hud: true,
           order: order++,
           description: description,
-          statuses: [id],
-          flags: {
-            core: { statusId: id },
-            "dfreds-convenient-effects": { name: name }
-          }
+          statuses: [id]
         });
       }
     }
 
     if (statusArray.length === 0) {
-      console.warn("⚠️ No effects found in DCE JSON");
+      console.warn("⚠️ No effects found in the JSON file");
       return;
     }
 
     CONFIG.statusEffects = statusArray;
 
-    console.log(`✅ Loaded ${statusArray.length} custom status effects with tint & description`);
+    console.log(`✅ Successfully loaded ${statusArray.length} custom status effects`);
 
   } catch (error) {
-    console.error("❌ Failed to load DCE JSON:", error);
-    ui.notifications.error("Custom Status Effects failed to load JSON. Check console (F12).");
+    console.error("❌ Failed to load effects JSON:", error);
+    ui.notifications.error("Acksii Status Effects failed to load the JSON file. Check console (F12).");
   }
 });
