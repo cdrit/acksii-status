@@ -1,4 +1,19 @@
 // scripts/main.js
+
+// Compatibility patch for Acks & Adventures system deprecations
+Hooks.once("init", () => {
+  if (game.system.id === "acks") {
+    console.log("🔧 Your Custom Status Effects | Applying AcksTokenHud compatibility patch");
+    
+    // Silence the specific deprecation warnings
+    foundry.utils.logCompatibilityWarning = function() {
+      // Do nothing for renderTemplate warnings from AcksTokenHud
+      if (arguments[0]?.includes?.("renderTemplate")) return;
+      console.warn(...arguments);
+    };
+  }
+});
+
 Hooks.on("init", async () => {
   console.log("🔄 Your Custom Status Effects | Loading DCE JSON...");
 
@@ -31,13 +46,7 @@ Hooks.on("init", async () => {
         const name = effectEntry.name;
         const img = effectEntry.img || "icons/svg/aura.svg";
 
-        // Improved tint extraction (handles different DCE export structures)
-        let tint = effectEntry.tint 
-                || effectEntry.effect?.tint 
-                || effectEntry.color 
-                || "#ffffff";
-
-        // Ensure tint is a valid hex color
+        let tint = effectEntry.tint || effectEntry.effect?.tint || effectEntry.color || "#ffffff";
         if (!tint.startsWith("#")) tint = "#" + tint.replace("#", "");
 
         const description = effectEntry.description 
@@ -49,24 +58,17 @@ Hooks.on("init", async () => {
           id: id,
           name: name,
           img: img,
-          tint: tint,                    // ← This should color the HUD icons
+          tint: tint,
           hud: true,
           order: order++,
           description: description,
           statuses: [id],
-
-          // Helps with rendering and DFreds compatibility
           flags: {
             core: { statusId: id },
             "dfreds-convenient-effects": { name: name }
           }
         });
       }
-    }
-
-    if (statusArray.length === 0) {
-      console.warn("⚠️ No effects found in DCE JSON");
-      return;
     }
 
     CONFIG.statusEffects = statusArray;
