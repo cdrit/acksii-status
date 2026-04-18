@@ -36,6 +36,14 @@ Hooks.on("init", async () => {
                          || effectEntry.notes 
                          || "";
 
+        // Extract the full changes from the DCE Active Effect
+        let changes = [];
+        const aeData = effectEntry.effect || effectEntry;   // DCE sometimes nests the AE
+
+        if (aeData?.changes && Array.isArray(aeData.changes)) {
+          changes = aeData.changes;   // This is the important part for real mechanical changes
+        }
+
         statusArray.push({
           id: id,
           name: name,
@@ -44,7 +52,17 @@ Hooks.on("init", async () => {
           hud: true,
           order: order++,
           description: description,
-          statuses: [id]
+          statuses: [id],
+
+          // Core fields that make the status apply real Active Effect changes
+          changes: changes,                    // ← This applies the actual modifiers
+          duration: aeData.duration || {},     // preserves duration if any
+          flags: {
+            core: { statusId: id },
+            "dfreds-convenient-effects": {
+              name: name
+            }
+          }
         });
       }
     }
@@ -56,7 +74,7 @@ Hooks.on("init", async () => {
 
     CONFIG.statusEffects = statusArray;
 
-    console.log(`✅ Successfully loaded ${statusArray.length} custom status effects`);
+    console.log(`✅ Successfully loaded ${statusArray.length} custom status effects with full Active Effect changes`);
 
   } catch (error) {
     console.error("❌ Failed to load effects JSON:", error);
