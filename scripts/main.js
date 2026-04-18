@@ -1,19 +1,4 @@
 // scripts/main.js
-
-// Compatibility patch for Acks & Adventures system deprecations
-Hooks.once("init", () => {
-  if (game.system.id === "acks") {
-    console.log("🔧 Your Custom Status Effects | Applying AcksTokenHud compatibility patch");
-    
-    // Silence the specific deprecation warnings
-    foundry.utils.logCompatibilityWarning = function() {
-      // Do nothing for renderTemplate warnings from AcksTokenHud
-      if (arguments[0]?.includes?.("renderTemplate")) return;
-      console.warn(...arguments);
-    };
-  }
-});
-
 Hooks.on("init", async () => {
   console.log("🔄 Your Custom Status Effects | Loading DCE JSON...");
 
@@ -46,7 +31,10 @@ Hooks.on("init", async () => {
         const name = effectEntry.name;
         const img = effectEntry.img || "icons/svg/aura.svg";
 
-        let tint = effectEntry.tint || effectEntry.effect?.tint || effectEntry.color || "#ffffff";
+        let tint = effectEntry.tint 
+                || effectEntry.effect?.tint 
+                || effectEntry.color 
+                || "#ffffff";
         if (!tint.startsWith("#")) tint = "#" + tint.replace("#", "");
 
         const description = effectEntry.description 
@@ -71,12 +59,17 @@ Hooks.on("init", async () => {
       }
     }
 
+    if (statusArray.length === 0) {
+      console.warn("⚠️ No effects found in DCE JSON");
+      return;
+    }
+
     CONFIG.statusEffects = statusArray;
 
     console.log(`✅ Loaded ${statusArray.length} custom status effects with tint & description`);
 
   } catch (error) {
     console.error("❌ Failed to load DCE JSON:", error);
-    ui.notifications.error("Custom Status Effects failed to load JSON.");
+    ui.notifications.error("Custom Status Effects failed to load JSON. Check console (F12).");
   }
 });
