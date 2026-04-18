@@ -318,6 +318,12 @@
           "value": "-4",
           "priority": null
         },
+         {
+          "key": "ATL.sight.enabled",
+          "mode": 5,
+          "value": "false",
+          "priority": null
+        },
         {
           "key": "system.surprise.avoidsurprise",
           "mode": 2,
