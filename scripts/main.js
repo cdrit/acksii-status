@@ -28,12 +28,31 @@ Hooks.on("init", async () => {
           .replace(/-+/g, "-")
           .replace(/^-|-$/g, "");
 
+        // Extract useful data from DCE export
+        const name = effectEntry.name;
+        const img = effectEntry.img || "icons/svg/aura.svg";
+        const tint = effectEntry.tint || effectEntry.effect?.tint || "#ffffff";
+        const description = effectEntry.description 
+                         || effectEntry.effect?.description 
+                         || effectEntry.notes 
+                         || "";
+
         statusArray.push({
           id: id,
-          name: effectEntry.name,
-          img: effectEntry.img || "icons/svg/aura.svg",
+          name: name,
+          img: img,
+          tint: tint,                    // ← Color for HUD icon
           hud: true,
-          order: order++
+          order: order++,
+          description: description,      // ← Shown in tooltip / effects panel
+          
+          // Optional but recommended for better integration
+          statuses: [id],
+          flags: {
+            "dfreds-convenient-effects": {
+              name: name
+            }
+          }
         });
       }
     }
@@ -43,13 +62,12 @@ Hooks.on("init", async () => {
       return;
     }
 
-    // ←←← THIS IS THE IMPORTANT FIX
     CONFIG.statusEffects = statusArray;
 
-    console.log(`✅ Successfully loaded ${statusArray.length} custom status effects`);
+    console.log(`✅ Successfully loaded ${statusArray.length} custom status effects with colors & descriptions`);
 
   } catch (error) {
     console.error("❌ Failed to load DCE JSON:", error);
-    ui.notifications.error("Your Custom Status Effects module failed to load the JSON. Check console (F12).");
+    ui.notifications.error("Custom Status Effects failed to load JSON. Check console.");
   }
 });
