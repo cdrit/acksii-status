@@ -1,0 +1,3093 @@
+{
+  "name": "ACKS - Conditions",
+  "type": "base",
+  "flags": {
+    "dfreds-convenient-effects": {
+      "isConvenient": true,
+      "isBackup": false,
+      "isViewable": true,
+      "folderColor": ""
+    }
+  },
+  "img": "modules/dfreds-convenient-effects/images/magic-palm.svg",
+  "system": {},
+  "effects": [
+    {
+      "name": "Beholding",
+      "img": "modules/game-icons-net/blackbackground/dead-eye.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-beholding",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A creature is beholding another creature or effect when that creature or effect is in line of sight and within 10% of maximum visibility distance. (In normal conditions, the maximum visibility distance to a man-sized creature is 600’, so it can be beheld at 60’.)</p></li><li><p>A creature can behold creatures using lightless vision, but not using echolocation, mechanoreception, or shadowy senses.</p></li><li><p>At the start of its initiative, a creature can close its eyes to avoid beholding a creature or effect or open its eyes if currently doing so. A creature that is closing its eyes isconsidered blinded until it stops closing its eyes.</p></li></ul>",
+      "_id": "Z8bSgQjy7DNad6f4",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#65bfec",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770050958584
+      }
+    },
+    {
+      "name": "Berserk",
+      "img": "systems/acks/assets/icons/berserkergang.webp",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-berserk",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A berserk creature gains a +2 bonus to attack throws in melee and with thrown weapons.</p></li><li><p>A berserk creature becomes immune to the <strong>cowering</strong>, <strong>faltering</strong>, or <strong>frightened</strong> conditions and never checks morale.</p></li><li><p>A berserk creature suffers a -2 penalty to AC.</p></li><li><p>A berserk creature becomes limited in his tactics. It cannot conduct defensive movement to retreat or withdraw from an enemy within 5’ and cannot move in such a way that the range between itself and the nearest visible threat would increase. It must advance 5’ after cleaving if necessary to do so to engage an enemy and he has sufficient movement.</p></li><li><p>The berserk condition ends when combat ends, and cannot be ended before then.</p></li></ul>",
+      "_id": "xt1DuHEJB6fJXPFF",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.aac.mod",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "2",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ed0c0c",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Bewitched",
+      "img": "modules/game-icons-net/blackbackground/three-friends.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-bewitched",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A bewitched creature believes that the caster who bewitched it is a beloved friend.</p></li><li><p>A bewitched creature will interpret anything the caster says in the most favorable manner.</p></li><li><p>If a fight breaks out between the bewitched creature’s allies and the caster, the creature will spend one round attempting to verbally defuse the fight, then thereafter fight against whichever side initiated the violence, making nonlethal attacks if possible.</p></li><li><p>A bewitched creature might agree to cover up the caster’s activities, allow him access to restricted areas, risk its own life to save his, or do any of the other foolish things that people sometimes do for their friends despite their better judgment.</p></li></ul>",
+      "_id": "XkiSjE122RUEVZDt",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#d00df8",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770050966472
+      }
+    },
+    {
+      "name": "Blessed",
+      "img": "modules/game-icons-net/blackbackground/iron-cross.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-blessed",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>blessed</strong> or <strong>inspired</strong> creature gains a +1 bonus to attack throws, armor class, morale rolls, and saving throws against fear.</p></li><li><p><strong>Blessed</strong> can stack with <strong>Inspired</strong>, so a creature can benefit from both the bard class power and the divine spell.</p></li></ul>",
+      "_id": "kU7uXDK1VoeHKCZY",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.thac0.mod.missile",
+          "mode": 2,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.aac.mod",
+          "mode": 2,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.details.morale",
+          "mode": 2,
+          "value": "1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#fded81",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770491788366
+      }
+    },
+    {
+      "name": "Inspired",
+      "img": "modules/game-icons-net/blackbackground/swords-power.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-inspired",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>blessed</strong> or <strong>inspired</strong> creature gains a +1 bonus to attack throws, armor class, morale rolls, and saving throws against fear.</p></li><li><p><strong>Blessed</strong> can stack with <strong>Inspired</strong>, so a creature can benefit from both the bard class power and the divine spell.</p></li></ul>",
+      "_id": "O4GdHZoXvGRayASQ",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.thac0.mod.missile",
+          "mode": 2,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.aac.mod",
+          "mode": 2,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.details.morale",
+          "mode": 2,
+          "value": "1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#83fd81",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770494368271
+      }
+    },
+    {
+      "name": "Blinded",
+      "img": "modules/game-icons-net/blackbackground/sight-disabled.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-blinded",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A blinded creature suffers a -2 penalty to surprise rolls and cannot make a free facing change when engaged.</p></li><li><p>A blinded creature cannot claim line of sight on any targets except by touch. It cannot make missile attacks. It can make melee attacks at a -4 penalty if it has reason to know the target is there.</p></li><li><p>A blinded creature suffers a -4 penalty to all proficiency throws impacted by sight (Judge’s discretion).</p></li><li><p>A blinded creature has all of its speeds reduced to 1/3 its normal rate (unless it has another way to see).</p></li></ul>",
+      "_id": "54JgtjsYwQWDmFtb",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "-4",
+          "priority": null
+        },
+        {
+          "key": "system.surprise.avoidsurprise",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#6c4a82",
+      "transfer": true,
+      "statuses": [
+        "blind"
+      ],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770492050897
+      }
+    },
+    {
+      "name": "Burning",
+      "img": "modules/game-icons-net/blackbackground/burning-skull.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-burning",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A burning creature suffers [[/r 1d8]] fire damage at the starts of its initiative.</p></li><li><p>The condition ends when the flames go out.</p></li></ul>",
+      "_id": "6T3Ut9enA9DPv7Gv",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ff8800",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770492068156
+      }
+    },
+    {
+      "name": "Charging",
+      "img": "modules/game-icons-net/blackbackground/charging-bull.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-charging",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A charging creature gains a +2 bonus to melee attack throws, but becomes <strong>disordered</strong> until the start of its next initiative.</p></li><li><p>A <strong>charging</strong> creature equipped with an impact weapon will deal impact damage.</p></li><li><p>The condition is ended on the creature’s next initiative.</p></li></ul>",
+      "_id": "kr5uOgvGxLkYLUVk",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#f70202",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770492117816
+      }
+    },
+    {
+      "name": "Choking",
+      "img": "modules/game-icons-net/blackbackground/slipknot.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-choking",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>choking</strong> or <strong>vomiting</strong> creature cannot take any actions or speak. However, it can still defend itself (it is not <strong>vulnerable</strong>).</p>",
+      "_id": "n9fWT2urwa8DCrQR",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#00ff11",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770492251140
+      }
+    },
+    {
+      "name": "Vomiting",
+      "img": "modules/game-icons-net/blackbackground/vomiting.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-vomiting",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>choking</strong> or <strong>vomiting</strong> creature cannot take any actions or speak. However, it can still defend itself (it is not <strong>vulnerable</strong>).</p>",
+      "_id": "aNECBi2WfpkSbllD",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#00ff11",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770502314656
+      }
+    },
+    {
+      "name": "Clambering",
+      "img": "modules/game-icons-net/blackbackground/leapfrog.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-clambering",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>clambering</strong> creature gains a +2 attack bonus against the target creature it has clambered onto and the creature that has been clambered onto is <strong>vulnerable</strong> to the clambering creature.</p><p>A clambering creature gains a measure of protection against the target creature’s own attacks. If the target creature lacks arms, tails, or other appendages capable of reaching its own back, it cannot directly attack the clambering creature. Even if the target creature does have such appendages, it attacks the clambering combatant with a -4 penalty to attack throws.</p>",
+      "_id": "rird5LQ52kk5ZzsM",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#6c70ea",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770492431931
+      }
+    },
+    {
+      "name": "Concentrating",
+      "img": "modules/game-icons-net/blackbackground/wizard-face.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-concentrating",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>concentrating</strong> creature is able to sustain a spell or effect which requires <strong>concentration</strong>.</p></li><li><p>The condition is ended immediately if the creature takes damage or fails a saving throw (except a secret saving throw).</p></li><li><p>The condition is also ended immediately if the creature takes a full-round action or a combat action, moves more than one-half its combat speed during a round, moves more than its exploration speed during a turn, or moves more than one-half its expedition speed during a day. Taking an action in lieu of moving, however, does not end the condition, nor does moving at exploration speed.</p></li><li><p>A creature can maintain concentration for no more than 8 hours each day, counting it as a strenuous dedicated activity.</p></li></ul>",
+      "_id": "cABFQoPK1ylWpq5Y",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770047536299
+      }
+    },
+    {
+      "name": "Concentrating and Stationary",
+      "img": "modules/game-icons-net/blackbackground/tarot-01-the-magician.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-concentrating-and-stationary",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>concentrating and stationary</strong> creature is able to sustain a continuous spell or effect which requires <strong>stationary concentration</strong>.</p></li><li><p>The condition ends if the creature takes damage or fails a saving throw (except a secret saving throw).</p></li><li><p>The condition also ends if the creature takes any action other than remaining stationary and sustaining the spell.</p></li><li><p>A creature can maintain <strong>stationary concentration</strong> for no more than 8 hours each day, counting it as a strenuous dedicated activity</p></li></ul>",
+      "_id": "WBN9NVS4d9cueMtq",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770047564110
+      }
+    },
+    {
+      "name": "Cowering",
+      "img": "modules/game-icons-net/blackbackground/oppression.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-cowering",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>cowering</strong> creature cannot take any actions until the condition ends.</p></li><li><p>A <strong>cowering</strong> creature is <strong>vulnerable</strong> until the condition ends.</p></li></ul>",
+      "_id": "rBNVqt1CseZs8Fvy",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770047621642
+      }
+    },
+    {
+      "name": "Deafened",
+      "img": "modules/game-icons-net/blackbackground/hearing-disabled.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-deafened",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>deafened</strong> creature suffers a -2 penalty to surprise rolls.</p><p>A <strong>deafened</strong> creature automatically fails Listening throws. It cannot claim earshot on any sounds.</p><p>A <strong>deafened</strong> creature cannot use echolocation or shadowy senses to see.</p><p>When a creature engages an unengaged <strong>deafened</strong> opponent from the rear, the opponent cannot make a free facing change unless it has some other non-visual means to detect the opponent (such as mechanoreception).</p><p>Due to its inability to hear itself, a <strong>deafened</strong> creature has a -4 penalty on any throws that require vocalization (such as a using Magical Music proficiency).</p><p>If a <strong>deafened</strong> creature wants to cast a spell, read a scroll, or utter a command word, the creature must make a throw of 8+. If the throw succeeds, the creature can take the action. If the throw fails, the creature’s spell fizzles, scroll is wasted, or command word is misspoken.</p>",
+      "_id": "KbGtOMAZ57s9qB0A",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.surprise.avoidsurprise",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#1ea60c",
+      "transfer": true,
+      "statuses": [
+        "deaf"
+      ],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770492541296
+      }
+    },
+    {
+      "name": "Dehydrated",
+      "img": "modules/game-icons-net/blackbackground/desert-skull.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-dehydrated",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>dehydrated</strong> creature cannot force march or heal wounds naturally.</p></li><li><p>A <strong>dehydrated</strong> creatures loses [[/r 1d6]] CON each day until the condition ends or his CON reaches 0, at which point he dies.</p></li><li><p>The condition ends when the creature drinks a full ration of water. Lost CON returns at a rate of 3 points each day that the character gets a full ration of water.</p></li><li><p>Only living creatures can be affected by this condition.</p></li></ul>",
+      "_id": "gh027mM9RTgeeWmO",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.scores.con.value",
+          "mode": 2,
+          "value": "-0",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#536179",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770492845710
+      }
+    },
+    {
+      "name": "Disfavored",
+      "img": "modules/game-icons-net/blackbackground/back-pain.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-disfavored",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>Each time a <strong>disfavored</strong> caster casts a divine spell, he must roll [[/r 1d6]]. On a 1-2, the spell fails. The failed spell still counts against the number of spells he can cast per day.</p></li><li><p>The condition ends as soon as the caster meets his daily prayer requirement.</p></li></ul>",
+      "_id": "REnt2kcydcWlO8KK",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#565a11",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493489258
+      }
+    },
+    {
+      "name": "Drowning",
+      "img": "modules/game-icons-net/blackbackground/drowning.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-drowning",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>drowning</strong> creature cannot take any actions.</p></li><li><p>A <strong>drowning</strong> creature sinks 10’ per stone of encumbrance each round at the start of its initiative.</p></li><li><p>A <strong>drowning</strong> creature is <strong>vulnerable</strong>.</p></li><li><p>The condition ends if an allied creature who is not drowning grabs it (requiring an action in lieu of moving) and carries it to the surface of the water. The <strong>drowning</strong> creature imposes one-half its weight in encumbrance (usually 7 3/6 stone).</p></li><li><p>If the condition hasn’t ended after 5 + CON mod rounds, the creature dies at the end of its initiative.</p></li><li><p>Only living creatures can be affected by this condition.</p></li></ul>",
+      "_id": "6xO7MhjSAZNpiMPD",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770047951184
+      }
+    },
+    {
+      "name": "Enervated",
+      "img": "modules/game-icons-net/blackbackground/half-body-crawling.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-enervated",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>An <strong>enervated</strong> creature must make a Death saving throw each day when it wakes from 8 hours of restful sleep. If the creature rests in a pinnacle of good (see ACKS JJ, p. 89), it gains a bonus to its save: +1 for an illuminated pinnacle, +2 for a hallowed pinnacle, and +4 for a sacrosanct pinnacle. If the creature does not gain 8 hours of restful sleep in a day, it automatically fails the save. If the save fails, the creature permanently reduces its maximum hit points by another point. If the save succeeds, the creature does not reduce its maximum hit points further that day. If the save succeeds three times in a row, the condition ends. A creature unlucky enough to be reduced to 0 maximum hit points by this condition is slain.</p><p>A creature can end the condition and restore its maximum hit point total by being healed with ritual magic. A creature that advances in level can re-roll its maximum hit points using its full Hit Dice, but leveling itself does not end the enervated condition.</p>",
+      "_id": "ELMo7TaWwgGHvVVn",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770047970128
+      }
+    },
+    {
+      "name": "Engaged",
+      "img": "modules/game-icons-net/blackbackground/swordman.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-engaged",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>An <strong>engaged</strong> creature cannot charge and has a limited range of movement actions. It cannot march, stand up, or take cover. It can remain stationary and turn to face an engaging opponent.</p><p>An <strong>engaged</strong> creature can still cast a spell or retreat as a full-round action and can still withdraw or take an action in lieu of moving.</p><p>The condition ends immediately when the creature is no longer within 5’ of an opponent that is facing it and not <strong>helpless</strong>.</p>",
+      "_id": "48DDMYitGmFL6Zdr",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#a30000",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493083851
+      }
+    },
+    {
+      "name": "Enlarged",
+      "img": "modules/game-icons-net/blackbackground/muscle-up.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-enlarged",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>An enlarged creature increases its size by one size category. It becomes two times as tall and eight times as heavy as it is ordinarily. If it is increased to huge size, its AC is reduced by 1; if gigantic, by 2; if colossal, by 4.</p></li><li><p>An enlarged creature gains +2 to melee attacks and throws and gains an additional die of damage with melee and thrown attacks dealing physical damage. If these attacks already deal a set of damage dice, it deals an additional set of damage dice (e.g. 4d6 instead of 2d6).</p></li></ul>",
+      "_id": "bhQqaiu3qWb9qjCv",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.aac.mod",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "2",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#d3ff75",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493238465
+      }
+    },
+    {
+      "name": "Disordered",
+      "img": "modules/game-icons-net/blackbackground/falling.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-disordered",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>disordered</strong> creature’s AC is reduced by 2.</p></li><li><p>The condition ends at the start of the creature’s next initiative.</p></li></ul>",
+      "_id": "1Pu8fKhd9kdrR9HP",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.aac.mod",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ff9500",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493032894
+      }
+    },
+    {
+      "name": "Dominated",
+      "img": "modules/game-icons-net/blackbackground/warlock-eye.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-dominated",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>dominated</strong> creature acts according to its dominator’s will, doing whatever is mentally commanded of it, including fight, flee, speak, etc.</p></li><li><p>A <strong>dominated</strong> creature has no independent volition and if left without commands will sit idle or revert to instinctual behaviors.</p></li></ul>",
+      "_id": "Y3p6y7pfDtE39iOh",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770048024549
+      }
+    },
+    {
+      "name": "Enslaved",
+      "img": "modules/game-icons-net/blackbackground/slavery-whip.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-enslaved",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>An <strong>enslaved</strong> creature in the presence of its enslaver will respond to its enslaver’s orders and do whatever is commanded of it. In the absence of orders, the <strong>enslaved</strong> creature will act in the interests of its enslaver to serve and protect it as best it can.</p><p>An <strong>enslaved</strong> creature absent its enslaver will be confused and passive. It will be capable of carrying out routine activities, but cannot use spells or magic items or make complex decisions. Characters familiar with the <strong>enslaved</strong> creature before its enslavement will be able to tell that something is amiss, although they may not know it is <strong>enslaved</strong> unless they <em>discern bewitchment</em>.</p><p>If the enslaver attacks the <strong>enslaved</strong> creature or its allies, the <strong>enslaved</strong> creature will not defend itself or fight its enslaver.</p>",
+      "_id": "dyDGXKOkH9GXcKs2",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#f6baf7",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493263297
+      }
+    },
+    {
+      "name": "Enthralled",
+      "img": "modules/game-icons-net/blackbackground/suspicious.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-enthralled",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>On its initiative, an <strong>enthralled</strong> creature will move at combat speed towards the closest creature that <strong>enthralled</strong> it. If its movement brings it into deep water, the creature begin drowning.</p><p>An <strong>enthralled</strong> creature cannot take full-round actions, combat actions, or even speak.</p><p>An <strong>enthralled</strong> creature is <strong>vulnerable</strong> to attacks by the creature(s) that enthralled it.</p><p>The condition ends when the duration elapses, the effect is dispelled, or the creature that caused the condition is slain.</p>",
+      "_id": "fvlnbXlxZ0s5ntCL",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#d667fe",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493281591
+      }
+    },
+    {
+      "name": "Faltering",
+      "img": "modules/game-icons-net/blackbackground/inner-self.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-faltering",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>faltering</strong> creature suffers a -2 penalty to attack throws, proficiency throws, and saving throws against the source of this condition.</p>",
+      "_id": "crAw1wO9AZ3Dy21U",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#bd2eff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493792092
+      }
+    },
+    {
+      "name": "Fatigued",
+      "img": "modules/game-icons-net/blackbackground/tired-eye.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-fatigued",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>fatigued</strong> creature suffers a cumulative -1 penalty on attack throws, proficiency throws, saving throws, and damage rolls until the condition ends.</p></li><li><p>The condition is ended when the creature rests as its dedicated activity for a day and gets 8 hours of restful sleep.</p></li><li><p>If a creature continues to be active, the penalty is cumulative with each additional day until the condition ends.</p></li><li><p>Only living creatures can be affected by this condition.</p></li></ul>",
+      "_id": "jWr2O0WNdQRO03Gp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.damage.mod.melee",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        },
+        {
+          "key": "system.damage.mod.missile",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.missile",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        },
+        {
+          "key": "system.save.mod",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#548c5e",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493427097
+      }
+    },
+    {
+      "name": "Flanked",
+      "img": "modules/game-icons-net/blackbackground/duality.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-flanked",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>Attack throws against <strong>flanked</strong> creatures gain a +2 bonus.</p></li><li><p>A creature is never <strong>flanked</strong> and <strong>vulnerable</strong> to the same opponent; the <strong>vulnerable</strong> condition takes precedence.</p></li></ul>",
+      "_id": "ksbJRENRH4gAkdRJ",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.aac.mod",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ff8080",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493462675
+      }
+    },
+    {
+      "name": "Forgetful",
+      "img": "modules/game-icons-net/blackbackground/extra-lucid.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-forgetful",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>Each time a <strong>forgetful</strong> caster casts an arcane spell, he must roll [[/r 1d6]]. On a 1-2, the spell fails. The failed spell still counts against the number of spells he can cast per day.</p></li><li><p>The condition ends as soon as the caster meets his daily study requirement.</p></li></ul>",
+      "_id": "vS7dqupR1xtRDcJM",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#00ff9d",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493571488
+      }
+    },
+    {
+      "name": "Frightened",
+      "img": "modules/game-icons-net/blackbackground/terror.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-frightened",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>frightened</strong> creature cannot cast spells, take combat actions, or speak (except to make exclamations of peril and warning such as “DRAGON!” or “Flee for your life!”).</p><p>A <strong>frightened</strong> creature must retreat from the source of its fear at its running speed until the condition ends.</p><p>If a <strong>frightened</strong> creature cannot flee, it must <strong>cower in terror</strong>.</p><p>An <strong>engaged</strong> creature that is <strong>frightened</strong> will <strong>cower in terror</strong> until it is able to disengage with defensive movement.</p>",
+      "_id": "clPaxLfqzQkFWrXE",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#875cff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493583512
+      }
+    },
+    {
+      "name": "Grabbed",
+      "img": "modules/game-icons-net/blackbackground/grab.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-grabbed",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>grabbed</strong> creature cannot attack, cast spells, move, or take any other action except to attempt to escape.</p></li><li><p>While a creature is <strong>grabbed</strong>, the opponent which <strong>grabbed</strong> it can automatically deal damage on its initiative each round to the <strong>grabbed</strong> creature without having to make an attack throw. Doing so counts as the opponent’s attack with whatever natural weapon it has used to grab the creature. A <strong>grabbed</strong> creature still receives a saving throw against any special effects of the attack (such as poison, etc.).</p></li><li><p>While a creature is <strong>grabbed</strong>, the opponent which grabbed it can move (bringing the grabbed creature with it), but the grabbed creature’s weight (lbs / 10) is applied as stones of encumbrance to the opponent. If the <strong>grabbed</strong> creature’s weight causes the opponent to exceed its maximum load, the opponent cannot move. Regardless of encumbrance, however, the opponent cannot charge or run unless the <strong>grabbed</strong> creature is at least one size category smaller than the opponent.</p></li><li><p>A <strong>grabbed</strong> creature also has the <strong>vulnerable</strong> condition while it is grabbed.</p></li><li><p>The <strong>grabbed</strong> condition is ended immediately when the <strong>grabbed</strong> creature escapes or when the creature which grabbed it releases it.</p></li><li><p>Oozes and similarly amorphous creatures, as well as incorporeal creatures, are immune to this condition.</p></li></ul>",
+      "_id": "pfE6VJ3hd1PPtv5I",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493556213
+      }
+    },
+    {
+      "name": "Helpless",
+      "img": "modules/game-icons-net/blackbackground/sinking-trap.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-helpless",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>helpless</strong> creature cannot take any actions.</p><p>A <strong>helpless</strong> creature is <strong>vulnerable</strong>.</p><p>Melee attack throws against <strong>helpless</strong> creatures automatically hit if the attacker is of the same or larger size category than the <strong>helpless</strong> creature. If the attacker is also not <strong>engaged</strong>, and his attack is capable of damaging the <strong>helpless</strong> creature, then the <strong>helpless</strong> creature can be automatically slain without attack or damage rolls by using a coup de grace. The attacker cannot cleave after a coup de grace.</p>",
+      "_id": "zOW6C78P7XgULSPa",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#f0adad",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770494219592
+      }
+    },
+    {
+      "name": "Hidden",
+      "img": "modules/game-icons-net/blackbackground/hidden.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-hidden",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>No creature can claim line of sight on a creature that is <strong>hidden</strong> from it until after the condition ends.</p></li><li><p>When a <strong>hidden</strong> creature <strong>engages</strong> an unengaged opponent, the opponent cannot make a free facing change.</p></li><li><p>If an opponent knows the <strong>hidden</strong> creature is there, it can attack the <strong>hidden</strong> creature in melee at a -4 penalty.</p></li><li><p>The <strong>hidden</strong> condition expires at the end of the creature’s initiative if it moves or attacks, unless otherwise noted. The condition also expires if the cover or darkness no longer conceals the creature from its opponents or if chooses to stop hiding.</p></li></ul>",
+      "_id": "VFL2WaCmIAf6xiZZ",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770049309162
+      }
+    },
+    {
+      "name": "Hungry",
+      "img": "modules/game-icons-net/blackbackground/food-chain.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-hungry",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>hungry</strong> creature suffers a -1 penalty on attack throws, proficiency throws, and saving throws until the condition ends.</p></li><li><p>The condition is ended when the creature eats a full ration of food.</p></li><li><p>Only living creatures can be affected by this condition.</p></li></ul>",
+      "_id": "pQ0r8DGT7VN1tqjl",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.save.mod",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.missile",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493707443
+      }
+    },
+    {
+      "name": "Hypothermic",
+      "img": "modules/game-icons-net/blackbackground/thermometer-cold.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-hypothermic",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>hypothermic</strong> adventurer cannot force march or heal wounds naturally.</p></li><li><p>A <strong>hypothermic</strong> creature loses [[/r 1d3]] CON each hour until the condition ends or his CON reaches 0, at which point he dies.</p></li><li><p>The condition ends if the creature is able to warm itself by a campfire or other large heat source for at least one hour.</p></li><li><p>Only living creatures can be affected by this condition.</p></li><li><p>Creatures which are <strong>resistant</strong> or <strong>invulnerable</strong> to cold damage are immune to this condition.</p></li></ul>",
+      "_id": "KrxELf8NuK921shV",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.scores.con.value",
+          "mode": 2,
+          "value": "-0",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#b8e7ff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770493826946
+      }
+    },
+    {
+      "name": "Immune",
+      "img": "icons/svg/holy-shield.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-immune",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>Immunity applies to particular damage types or effects. A creature can be immune to one or many damage types and might be immune to both mundane and extraordinary damage of a type, or to just one or the other. It might also be immune to specific effects or groups of effects, such as fear, disease, spells of a certain type, or even all spells below a certain level.</p></li><li><p>An immune creature automatically succeeds on all saving throws against spells or special abilities that deal that damage type, and ignores damage or effects of that type.</p></li></ul>",
+      "_id": "67dSqXMm1tbL1dIv",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770049376232
+      }
+    },
+    {
+      "name": "Incapacitated",
+      "img": "modules/game-icons-net/blackbackground/backstab.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-incapacitated",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>An <strong>incapacitated</strong> creature cannot be healed above 1 hit point.</p></li><li><p>An <strong>incapacitated</strong> creature cannot attack, cast spells, or undertake dedicated activities of any sort.</p></li><li><p>An <strong>incapacitated</strong> creature can move at half its speed. It cannot run or force march.</p></li><li><p>An <strong>incapacitated</strong> creature that is reduced to 0 or fewer hp is instantly slain.</p></li><li><p>The condition is ended when the <strong>incapacitated</strong> creature has recuperated for the required number of days.</p></li></ul>",
+      "_id": "cXKYS76oarcqC73B",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770049458202
+      }
+    },
+    {
+      "name": "Infuriated",
+      "img": "modules/game-icons-net/blackbackground/enrage.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-infuriated",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>An <strong>infuriated</strong> creature will attack any creatures it can detect. It will prioritize attacking whichever creature has most recently damaged it, but otherwise will attack the closest target. If the creature has no eligible targets, it will wait motionless in seething fury until a target presents itself.</p><p>An <strong>infuriated</strong> creature gains a +2 bonus to its attack throws but suffers a -2 penalty to its AC due to its mindless rage.</p><p>An <strong>infuriated</strong> creature is immune to fear and ignores morale rolls.</p><p>An <strong>infuriated</strong> creature cannot speak.</p>",
+      "_id": "URbZ79xgVCLfDLES",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "2",
+          "priority": null
+        },
+        {
+          "key": "system.aac.mod",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ff0000",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770494205270
+      }
+    },
+    {
+      "name": "Mesmerized",
+      "img": "modules/game-icons-net/blackbackground/bleeding-eye.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-mesmerized",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>mesmerized</strong> creature cannot take any actions.</p></li><li><p>A <strong>mesmerized</strong> creature is <strong>mute</strong>.</p></li><li><p>A <strong>mesmerized</strong> creature can still defend itself (i.e. it is <strong>not vulnerable</strong>).</p></li></ul>",
+      "_id": "qgFTOxXfwO8asL3B",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#8960fb",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770494456682
+      }
+    },
+    {
+      "name": "Mad",
+      "img": "modules/game-icons-net/blackbackground/mad-scientist.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-mad",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>mad</strong> creature who is attacked automatically retaliates on its next initiative, as long as it is still <strong>mad</strong> at the start of its initiative.</p><p>A <strong>mad</strong> creature which is restrained, imprisoned, alone, or otherwise can’t carry out the indicated action does nothing but babble incoherently.</p><p>In all other cases, a <strong>mad</strong> creature must roll randomly on its initiative number each round to determine its actions. The exact table rolled on depends on the source of the madness. If no table is specified, use that from <em>incite madness</em> (p. 229).</p>",
+      "_id": "AVBZLCk0LiDww4WG",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#7b3993",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770494426640
+      }
+    },
+    {
+      "name": "Mute",
+      "img": "modules/game-icons-net/blackbackground/mute.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-mute",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>mute</strong> creature cannot speak. This precludes casting spells, triggering magic items that rely on a command word, issuing verbal orders, and any other action relying on speech.</p>",
+      "_id": "Nj2rZAlBYLpkrbow",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770049949308
+      }
+    },
+    {
+      "name": "Paralyzed",
+      "img": "modules/game-icons-net/blackbackground/static-guard.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-paralyzed",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A paralyzed creature is <strong>helpless</strong> and <strong>mute</strong>.</p>",
+      "_id": "8VzYXvOufzZ37N1j",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ababab",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770494715353
+      }
+    },
+    {
+      "name": "Petrified",
+      "img": "modules/game-icons-net/blackbackground/stone-bust.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-petrified",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>petrified</strong> creature is <strong>helpless</strong>.</p><p>A <strong>petrified</strong> creature cannot see, hear, smell, taste, touch, speak, or think.</p><p>A <strong>petrified</strong> creature does not age, and is immune to all enchantment effects and to all death spells except <em>depetrification</em> or <em>disintegration</em>.</p><p>A <strong>petrified</strong> creature is damaged as a stone structure. Its weight is multiplied by 3. It has 1 shp per 2,000 lbs, rounded up.</p>",
+      "_id": "9MAMdo4ArIuBI7iT",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770050000308
+      }
+    },
+    {
+      "name": "Prone",
+      "img": "modules/game-icons-net/blackbackground/despair.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-prone",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>prone</strong> creature can take movement actions, but only to crawl at a combat speed of 5’, to take an action in lieu of moving, or to end the condition by using an action in lieu of moving to stand up.</p></li><li><p>A <strong>prone</strong> creature that is <strong>engaged</strong> is subject to the movement restrictions of being engaged, so it can only crawl if using defensive movement, and cannot stand up as an action in lieu of moving.</p></li><li><p>A <strong>prone</strong> creature can attack, but suffers a -4 penalty on its attack throws. A <strong>prone</strong> creature can stand up in lieu of attacking.</p></li><li><p>A <strong>prone</strong> creature is <strong>vulnerable</strong>.</p></li><li><p>The condition is ended immediately when the creature stands up.</p></li></ul>",
+      "_id": "Z4WJYVvCrebQ5NGU",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "-4",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.missile",
+          "mode": 2,
+          "value": "-4",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffbb00",
+      "transfer": true,
+      "statuses": [
+        "prone"
+      ],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770494807882
+      }
+    },
+    {
+      "name": "Queasy",
+      "img": "modules/game-icons-net/blackbackground/sleepy.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-queasy",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>queasy</strong> creature suffers a -3 to attack throws, proficiency throws, and damage rolls.</p>",
+      "_id": "oYvQBSxQ1mhy7nLj",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "-3",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.missile",
+          "mode": 2,
+          "value": "-3",
+          "priority": null
+        },
+        {
+          "key": "system.damage.mod.melee",
+          "mode": 2,
+          "value": "-3",
+          "priority": null
+        },
+        {
+          "key": "system.damage.mod.missile",
+          "mode": 2,
+          "value": "-3",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770497824264
+      }
+    },
+    {
+      "name": "Resistant",
+      "img": "modules/game-icons-net/blackbackground/surrounded-shield.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-resistant",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>Resistance applies to particular damage types. A creature can be resistant to one or many damage types and might be immune to both mundane and extraordinary damage of a type, or to just one or the other.</p></li><li><p>A resistant creature suffers only half damage from that type. It also gains a +2 bonus on saving throws against spells or special abilities that deal that damage type.</p></li></ul>",
+      "_id": "3iQpAaNcNpz6rFkQ",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770050376984
+      }
+    },
+    {
+      "name": "Restrained",
+      "img": "modules/game-icons-net/blackbackground/rope-coil.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-restrained",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>restrained</strong> creature cannot move, but can still attack, cast spells, take actions in lieu of attacking or moving, or attempt to escape.</p></li><li><p>The opponent which <strong>restrained</strong> the creature can automatically deal damage on its initiative each round to the <strong>restrained</strong> creature without having to make an attack throw. Doing so counts as the opponent’s attack with whatever special natural weapon it used to restrain the creature. The <strong>restrained</strong> creature still receives a saving throw against any special effects of the attack (such as poison, etc.).</p></li><li><p>A <strong>restrained</strong> creature also has the <strong>vulnerable</strong> condition while it is <strong>restrained</strong>.</p></li><li><p>Sometimes a creature can be <strong>restrained</strong> by multiple causes (such as several tentacles); when this occurs, the <strong>restrained</strong> creature suffers an additional -1 penalty on its attack throws for each additional cause of restraint, in addition to the effects above.</p></li><li><p>While a creature is <strong>restrained</strong>, the opponent which restrained it can move itself (bringing the restrained creature with it), but the restrained creature’s weight (lbs / 10) is applied as stones of encumbrance to the opponent. If the restrained creature’s weight causes the opponent to exceed its maximum load, the opponent cannot move. Regardless of encumbrance, however, the opponent cannot charge or run unless the restrained creature is at least one size category smaller than the opponent.</p></li><li><p>If a creature is restrained by long appendages (such as tentacles), the opponent which restrained it can, in lieu of an attack with that appendage, move the creature with its appendages while remaining stationary itself. Some creatures may have the speed at which they can move restrained opponents listed; if not otherwise noted, a restrained creature can be moved at the same rate as the opponent’s combat speed, subject to encumbrance. The restrained creature’s weight (lbs / 10) is applied as stones of encumbrance to the opponent’s appendage(s). Calculate the normal load for the opponent’s appendage(s) as (creature’s normal load × number of appendages restraining creature / total number of appendages) for purposes of calculating the rate at which the restrained creature can be moved.</p></li><li><p>The restrained condition is ended immediately when the restrained creature escapes or when the creature which restrained it releases it. If restrained by multiple causes, each must be escaped separately.</p></li><li><p>Oozes and similarly amorphous creatures, as well as incorporeal creatures, are immune to this condition</p></li></ul>",
+      "_id": "TRga0gqTjitr8hxn",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ff4d00",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770499473325
+      }
+    },
+    {
+      "name": "Shaken",
+      "img": "modules/game-icons-net/blackbackground/run.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-shaken",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>shaken</strong> creature suffers a -1 penalty to attack throws, armor class, morale rolls, and saving throws against fear.</p>",
+      "_id": "dFFzxeE7TdwswTg5",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.missile",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        },
+        {
+          "key": "system.aac.mod",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        },
+        {
+          "key": "system.details.morale",
+          "mode": 2,
+          "value": "-1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#a374fb",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770499565554
+      }
+    },
+    {
+      "name": "Shrunk",
+      "img": "modules/game-icons-net/blackbackground/mouse.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-shrunk",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>shrunk</strong> creature becomes half as tall and one-eighth as heavy as he is ordinarily. Its strength decreases proportionately, such that it suffers -2 to melee attack throws, deals half damage with physical attacks, and halves its carrying capacity. It also takes a -8 penalty to Dungeonbashing proficiency throws.</p><p>Any equipment the <strong>shrunk</strong> creature was carrying or wearing now has half as much encumbrance.</p><p>The <strong>shrunk</strong> creature gains a +4 bonus to Hiding and Sneaking. If unproficient, it is treated as proficient with a throw of 14+.</p>",
+      "_id": "GXakNijirHpObeVO",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.adventuring.dungeonbashing",
+          "mode": 2,
+          "value": "-8",
+          "priority": null
+        },
+        {
+          "key": "system.thac0.mod.melee",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#3b86e8",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770499688812
+      }
+    },
+    {
+      "name": "Slumbering",
+      "img": "modules/game-icons-net/blackbackground/sleeping-bag.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-slumbering",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>slumbering</strong> creature is <strong>helpless</strong>.</p></li><li><p>A <strong>slumbering</strong> creature is <strong>blinded</strong>, <strong>deafened</strong>, and <strong>mute</strong> (except for the occasional snore).</p></li><li><p>The condition is ended immediately if the <strong>slumbering</strong> creature is attacked, damaged, or moved.</p></li><li><p>Unless the <strong>slumbering</strong> condition is being maintained by magic, it ends automatically at the conclusion of the first combat round in which a noise is made loud enough to be within earshot were the slumbering creature awake.</p></li><li><p>Only living creatures can be affected by this condition.</p></li></ul>",
+      "_id": "Hu50STqY2pVh2syE",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#a660fb",
+      "transfer": true,
+      "statuses": [
+        "sleep"
+      ],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770499724334
+      }
+    },
+    {
+      "name": "Starving",
+      "img": "modules/game-icons-net/blackbackground/opened-food-can.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-starving",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>starving</strong> creature is <strong>hungry</strong>.</p></li><li><p>A <strong>starving</strong> creature cannot force march or heal wounds naturally.</p></li><li><p>A <strong>starving</strong> creature loses 1 CON each day until the condition ends or its CON reaches 0, at which point it dies.</p></li><li><p>The condition is replaced with the <strong>underfed</strong> condition when the creature eats a full ration of food. Lost CON returns at a rate of 1 point each day that the character gets a full ration of food.</p></li><li><p>Only living creatures can be affected by this condition.</p></li></ul>",
+      "_id": "KjOkUQ3IwgoAzqiI",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.scores.con.value",
+          "mode": 2,
+          "value": "-0",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#91b95f",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770499796763
+      }
+    },
+    {
+      "name": "Sneaking",
+      "img": "modules/game-icons-net/blackbackground/hooded-assassin.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-sneaking",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>sneaking</strong> creature makes no noise when it moves. Even creatures that make a successful Listening proficiency throw hear nothing.</p></li><li><p>When a <strong>sneaking</strong> creature <strong>engages</strong> an unengaged opponent from the rear, the opponent cannot make a free facing change.</p></li><li><p>The <strong>sneaking</strong> condition expires at the end of the creature’s initiative if it attacks by any means except for a coup de grace. The condition also expires if the creature chooses to stop sneaking.</p></li></ul>",
+      "_id": "23vu6AgaU1DwsqCK",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#0d9d0b",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770499737379
+      }
+    },
+    {
+      "name": "Stuck",
+      "img": "modules/game-icons-net/blackbackground/sticky-boot.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-stuck",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>stuck</strong> creature cannot attack, cast spells, move, or take any other action except to attempt to escape.</p></li><li><p>A <strong>stuck</strong> creature is <strong>vulnerable</strong>.</p></li><li><p>When attempting to escape from being <strong>stuck</strong>, a creature has two options, wiggling backwards or pushing forward.</p></li><li><p>If the creature attempts to wiggle backwards, it must make a Paralysis saving throw. If the throw succeeds, it retreats 10’ and the condition ends. If the throw fails, the creature remains <strong>stuck</strong>.</p></li><li><p>If the creature attempts to push forward, it must make a Dungeonbashing proficiency throw. If the throw succeeds, the creature advances 10’ and the condition ends. If the throw fails, the creature worsens its plight. Further attempts to escape have a cumulative -4 penalty to their throws.</p></li><li><p>The creature’s encumbrance in stone is applied as a penalty to both the saving throw and proficiency throw to get free. However, if the creature has Contortionism proficiency, it gains a +4 bonus on either throw.</p></li></ul>",
+      "_id": "UN80kvlBs969iBZK",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#3fee73",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770502061930
+      }
+    },
+    {
+      "name": "Subjacent",
+      "img": "modules/game-icons-net/blackbackground/underhand.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-subjacent",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>Attack throws against <strong>subjacent</strong> creatures gain a +1 bonus.</p>",
+      "_id": "Eq5ge8q1CALs0BIG",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ff0000",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770502082814
+      }
+    },
+    {
+      "name": "Surprised",
+      "img": "modules/game-icons-net/blackbackground/surprised.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-surprised",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>surprised</strong> creature cannot take any actions.</p></li><li><p>A <strong>surprised</strong> creature is <strong>vulnerable</strong>.</p></li><li><p>The condition ends at the start of the next combat round.</p></li></ul>",
+      "_id": "nsAl3CyAFYiCO6Cf",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#00d5ff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770502247570
+      }
+    },
+    {
+      "name": "Unconscious",
+      "img": "modules/game-icons-net/blackbackground/dunce-cap.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-unconscious",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>An <strong>unconscious</strong> creature is <strong>helpless</strong>.</p></li><li><p>An <strong>unconscious</strong> creature is <strong>blinded</strong>, <strong>deafened</strong>, and <strong>mute</strong> (except for the occasional snore).</p></li><li><p>The condition is ended when the creature is slain.</p></li><li><p>The condition is also ended when the unconscious creature’s wounds are treated. When this occurs, the unconscious creature must roll [[/r 1d20]] and [[/r 1d6]] on the Mortal Wounds table and apply any appropriate modifiers listed.</p></li><li><p>The condition is also ended if 24 hours pass. When this occurs, the unconscious creature must roll [[/r 1d20]] and [[/r 1d6]] on the Mortal Wounds table, with no bonus for treatment and at the full -10 penalty for being treated 1 day later.</p></li><li><p>Only living creatures can be affected by this condition.</p></li></ul>",
+      "_id": "X25GOLwEyNbjxp78",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#cf9ffe",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770502265888
+      }
+    },
+    {
+      "name": "Underfed",
+      "img": "modules/game-icons-net/blackbackground/meat.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-underfed",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>An <strong>underfed</strong> creature is <strong>hungry</strong>.</p></li><li><p>An <strong>underfed</strong> creature cannot force march or heal wounds naturally.</p></li><li><p>The condition ends if the creature eats a full ration of food.</p></li><li><p>If the condition has not ended after five days of no food, or ten days with half rations of food, the <strong>hungry</strong> condition is replaced with the <strong>starving</strong> condition.</p></li><li><p>Only living creatures can be affected by this condition.</p></li></ul>",
+      "_id": "CQhLsQx4uJCFNVvk",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ff4d00",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770502284782
+      }
+    },
+    {
+      "name": "Vexed",
+      "img": "modules/game-icons-net/blackbackground/surprised-skull.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-vexed",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>vexed</strong> creature suffers 1 piercing damage, or 2 piercing damage if it is unarmored and has a natural AC of 3 or less, at the end of its initiative each round.</p></li><li><p>The <strong>vexed</strong> condition ends immediately if the creature becomes engulfed or submerges itself in a body of water. Otherwise it ends after 3 rounds.</p></li></ul>",
+      "_id": "bg9FD9jCrldbDbZR",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#dea5e9",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770502300764
+      }
+    },
+    {
+      "name": "Vulnerable",
+      "img": "modules/game-icons-net/blackbackground/cracked-shield.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-vulnerable",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>vulnerable</strong> creature can be <strong>ambushed</strong> or <strong>backstabbed</strong> by creatures capable of doing so.</p><p>All attack throws against <strong>vulnerable</strong> creatures gain a +2 bonus, or a +4 bonus if the attacker <strong>ambushes</strong> or <strong>backstabs</strong> the <strong>vulnerable</strong> creature. The <strong>vulnerable</strong> creature is dealt the attack’s ordinary damage, or the attack’s ordinary damage plus additional damage from <strong>ambush</strong> or <strong>backstab</strong>.</p><p>A creature is <strong>vulnerable</strong> to all opponents anytime it is <strong>cowering</strong>, <strong>drowning</strong>, <strong>grabbed</strong>, <strong>helpless</strong>, <strong>paralyzed</strong>, <strong>petrified</strong>, <strong>prone</strong>, <strong>restrained</strong>, <strong>slumbering</strong>, <strong>surprised</strong>, <strong>stuck</strong>, <strong>unconscious</strong>, <strong>webbed</strong>, or <strong>wrestled</strong>.</p><p>A creature is <strong>vulnerable</strong> to a particular opponent if that opponent is attacking the creature from the rear, has <strong>enthralled</strong> the creature, or is <strong>clambering</strong> on the creature.</p><p>A creature is never <strong>flanked</strong> and <strong>vulnerable</strong> to the same opponent; the <strong>vulnerable</strong> condition takes precedence.</p>",
+      "_id": "QhztHfO5Fr9SGfO9",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770050693794
+      }
+    },
+    {
+      "name": "Webbed",
+      "img": "modules/game-icons-net/blackbackground/cobweb.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-webbed",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>webbed</strong> creature cannot move, but can still attack, cast spells, take actions in lieu of attacking or moving, or attempt to escape.</p></li><li><p>A <strong>webbed</strong> creature is <strong>vulnerable</strong>.</p></li><li><p>Sometimes a creature can be <strong>webbed</strong> by multiple causes (such as several separate attacks); when this occurs, the restrained creature suffers an additional -1 penalty on its attack throws for each additional cause of webbing, in addition to the effects above. If the penalty reaches -3, the creature becomes <strong>grabbed</strong>.</p></li><li><p>The <strong>webbed</strong> condition is ended immediately when the <strong>webbed</strong> creature escapes by slipping free or breaking free, or if the web is cut or burned away. If a creature has been <strong>webbed</strong> multiple times, it must slip free, break free, cut, or burn each web separately.</p></li><li><p>Slipping free requires a successful Paralysis saving throw. If the save succeeds, the creature escapes. If the save fails, creature becomes more entangled in the webs, leaving it <strong>helpless</strong>.</p></li><li><p>Breaking free requires a successful Dungeonbashing proficiency throw at -9. Large creatures gain a +4 bonus, huge creatures gain a +8 bonus, gigantic creatures gain a +12 bonus, and colossal creatures gain a +16 bonus. If the throw succeeds, the creature escapes. If the throw fails, the creature remains <strong>webbed</strong> (but does not become helpless).</p></li><li><p><strong>Webbed</strong> creatures can free themselves, and <strong>grabbed</strong>, <strong>helpless</strong>, and <strong>webbed</strong> creatures can be freed, by cutting the webbing or setting it aflame. Cutting webbing off a creature is an attack and requires a successful attack throw vs. AC 4 with a weapon dealing extraordinary slashing damage. If the attack throw succeeds, the creature is no longer <strong>webbed</strong>. Setting fire to the webbing is an attack and requires an attack throw against AC 0 with the fire source. If the attack succeeds, the webs instantly go up in flames. All creatures in the webbing immediately take [[/r 1d8]] fire damage at the start of their initiative until they escape the webbing. The webbing burns away at the end of two rounds.</p></li><li><p>Incorporeal creatures are immune to this condition.</p></li></ul>",
+      "_id": "wgu2UsSX56sBIeev",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#beb1cd",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770502367426
+      }
+    },
+    {
+      "name": "Winded",
+      "img": "modules/game-icons-net/blackbackground/arm-sling.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-winded",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p><strong>Winded</strong> creatures cannot run or charge.</p></li><li><p><strong>Winded</strong> creatures rowing vessels cannot move the vessel at oar sprint speed.</p></li><li><p>The condition is ended when the creature rests for one turn (10 minutes).</p></li><li><p>Only living creatures can be affected by this condition.</p></li></ul>",
+      "_id": "ePRgTt0Knwd78k1v",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770050743202
+      }
+    },
+    {
+      "name": "Wrestled",
+      "img": "modules/game-icons-net/blackbackground/thor-fist.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-wrestled",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<ul><li><p>A <strong>wrestled</strong> creature cannot attack, cast spells, move, or take any other action except to attempt to escape.</p></li><li><p>While a creature is <strong>wrestled</strong>, the opponent which wrestled it can attack it with a tiny weapon, or perform a brawl, force back, disarm, or knock down action each round, without having to make an attack throw so long as it remains wrestled. The opponent still receives a saving throw (if any).</p></li><li><p>While a creature is wrestled, the opponent which wrestled it can move (bringing the wrestled creature with it), but the wrestled creature’s weight in stones is applied as encumbrance to the opponent. If the wrestled creature’s weight causes the opponent to exceed its maximum load, the opponent cannot move. Regardless of encumbrance, however, the opponent cannot charge or run unless the wrestled creature is at least one size category smaller than the opponent.</p></li><li><p>A <strong>wrestled</strong> creature is <strong>vulnerable</strong>.</p></li><li><p>The wrestled condition is ended immediately when the wrestled creature escapes or when the creature which wrestled it releases it or performs a force back or knock down.</p></li><li><p>Oozes and similarly amorphous creatures, as well as incorporeal creatures, are immune to this condition.</p></li></ul>",
+      "_id": "xkx4fHkbPZQ8Xlzw",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#ff6666",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770502404670
+      }
+    },
+    {
+      "name": "Defending",
+      "img": "icons/svg/shield.svg",
+      "flags": {
+        "dfreds-convenient-effects": {
+          "ceEffectId": "ce-defending",
+          "isConvenient": true,
+          "isBackup": false,
+          "isTemporary": true,
+          "isViewable": true,
+          "isDynamic": false
+        }
+      },
+      "description": "<p>A <strong>defending</strong> character is defending himself or an adjacent character to his rear or offhand flank. If the combatant does not have a shield, he or the target he defends gains a +2 AC against melee attacks. If the combatant has a shield, he or the target he defends gains a +4 AC against missile weapons other than thrown weapons, and a +2 AC against melee attacks and thrown missile attacks, and a +2 bonus on Blast saving throws. The combatant must not have charged, run, or retreated. A character does not benefit from being defended by two characters from the same facing, but can benefit by being defended to both his front and flanks/rear. The benefits of the Defend action last until the start of the combatant’s next initiative or until the combatant declares he is casting a spell (whichever comes first).</p>",
+      "_id": "8JqidzJxAXYGrZH2",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": null,
+      "tint": "#f5e594",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "acks",
+        "systemVersion": "12.3.6",
+        "lastModifiedBy": "zv5zfZBlolXnH1SI",
+        "modifiedTime": 1770492766477
+      }
+    }
+  ],
+  "folder": null,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "acks-ii-game",
+      "uuid": "Item.TaTfYNY3PrYS4Pla",
+      "coreVersion": "13.351",
+      "systemId": "acks",
+      "systemVersion": "12.3.6"
+    },
+    "coreVersion": "13.351",
+    "systemId": "acks",
+    "systemVersion": "12.3.6",
+    "createdTime": 1770047254569,
+    "modifiedTime": 1770047263653,
+    "lastModifiedBy": "zv5zfZBlolXnH1SI"
+  },
+  "ownership": {
+    "default": 0
+  }
+}
