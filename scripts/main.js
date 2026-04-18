@@ -28,10 +28,18 @@ Hooks.on("init", async () => {
           .replace(/-+/g, "-")
           .replace(/^-|-$/g, "");
 
-        // Extract useful data from DCE export
         const name = effectEntry.name;
         const img = effectEntry.img || "icons/svg/aura.svg";
-        const tint = effectEntry.tint || effectEntry.effect?.tint || "#ffffff";
+
+        // Improved tint extraction (handles different DCE export structures)
+        let tint = effectEntry.tint 
+                || effectEntry.effect?.tint 
+                || effectEntry.color 
+                || "#ffffff";
+
+        // Ensure tint is a valid hex color
+        if (!tint.startsWith("#")) tint = "#" + tint.replace("#", "");
+
         const description = effectEntry.description 
                          || effectEntry.effect?.description 
                          || effectEntry.notes 
@@ -41,17 +49,16 @@ Hooks.on("init", async () => {
           id: id,
           name: name,
           img: img,
-          tint: tint,                    // ← Color for HUD icon
+          tint: tint,                    // ← This should color the HUD icons
           hud: true,
           order: order++,
-          description: description,      // ← Shown in tooltip / effects panel
-          
-          // Optional but recommended for better integration
+          description: description,
           statuses: [id],
+
+          // Helps with rendering and DFreds compatibility
           flags: {
-            "dfreds-convenient-effects": {
-              name: name
-            }
+            core: { statusId: id },
+            "dfreds-convenient-effects": { name: name }
           }
         });
       }
@@ -64,10 +71,10 @@ Hooks.on("init", async () => {
 
     CONFIG.statusEffects = statusArray;
 
-    console.log(`✅ Successfully loaded ${statusArray.length} custom status effects with colors & descriptions`);
+    console.log(`✅ Loaded ${statusArray.length} custom status effects with tint & description`);
 
   } catch (error) {
     console.error("❌ Failed to load DCE JSON:", error);
-    ui.notifications.error("Custom Status Effects failed to load JSON. Check console.");
+    ui.notifications.error("Custom Status Effects failed to load JSON.");
   }
 });
